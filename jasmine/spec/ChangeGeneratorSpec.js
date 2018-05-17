@@ -1,5 +1,11 @@
 describe('ChangeGenerator', function() {
 
+  it('changes its inputs from strings to numbers', function() {
+    cg = new ChangeGenerator('1p', '1p');
+    expect(cg.moneyGiven).toEqual(1);
+    expect(cg.changeDue).toEqual(1);
+  });
+
   describe('.returnChange()', function() {
 
     it('returns an empty array when given nothing', function() {
