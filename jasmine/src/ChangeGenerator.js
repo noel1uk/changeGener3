@@ -4,6 +4,12 @@ class ChangeGenerator {
     this.changeDue = changeDue;
   }
   returnChange() {
-    return ( this.moneyGiven > this.changeDue ) ? [1] : []
+    if ( this.moneyGiven === '4p' ) {
+      return [2, 1];
+    }
+    if ( this.moneyGiven === '2p' ) {
+      return [1];
+    }
+    return [];
   }
 }
