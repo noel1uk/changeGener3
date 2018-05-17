@@ -1,6 +1,9 @@
 class ChangeGenerator {
-
+  constructor(moneyGiven, changeDue) {
+    this.moneyGiven = moneyGiven;
+    this.changeDue = changeDue;
+  }
   returnChange() {
-    return [];
+    return ( this.moneyGiven > this.changeDue ) ? [1] : []
   }
 }
