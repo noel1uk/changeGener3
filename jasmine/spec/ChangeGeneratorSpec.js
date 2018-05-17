@@ -24,6 +24,10 @@ describe('ChangeGenerator', function() {
       cg = new ChangeGenerator('4p', '1p');
       expect(cg.returnChange()).toEqual([2, 1]);
     });
+    it('returns [2, 2] when given 5p and 1p', function() {
+      cg = new ChangeGenerator('5p', '1p');
+      expect(cg.returnChange()).toEqual([2, 2]);
+    });
   });
 
 });
