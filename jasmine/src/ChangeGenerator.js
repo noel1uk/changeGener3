@@ -1,3 +1,6 @@
 class ChangeGenerator {
-  
+
+  returnChange() {
+    return [];
+  }
 }
